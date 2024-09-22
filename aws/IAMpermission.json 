@@ -1,0 +1,38 @@
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "FullIAMAccess",
+      "Effect": "Allow",
+      "Action": [
+        "iam:*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+
+Or 
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "*"
+      "Resource": "*"
+    }
+  ]
+}
+
+
+/*
+Explanation:
+* Version: Specifies the policy language version.
+* Statement: Contains the policy statements.
+* Sid: Statement ID (optional).
+* Effect: Specifies whether to allow or deny access.
+* Action: Lists the IAM actions to allow.
+* Resource: Specifies the resources to which the actions apply.
+*/
